@@ -1,3 +1,14 @@
-:host{
-  font-family: 'BillionDreams_PERSONAL';
+div.menu-list {
+  font-size: 1.5rem;
+  font-family: BlackBones;
+}
+
+.menu-list span {
+  text-decoration: underline;
+  text-wrap: nowrap;
+}
+
+.main-heading {
+  font-family: BillionDreams_PERSONAL;
+  font-size: calc(4vw + 4vh + 2vmin);
 }

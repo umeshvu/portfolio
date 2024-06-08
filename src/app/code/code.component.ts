@@ -12,7 +12,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CodeComponent implements OnInit {
 
-  repoList!: any;
+  repoList: any[] = [];
 
   constructor(private http: HttpClient) {}
 

@@ -1,14 +1,17 @@
 <div class="ps-4 pe-4">
-  <div
-    class="border border-white m-1 p-2 d-inline-flex rounded-end"
-    *ngFor="let repo of repoList"
-  >
-    <a
-      class="text-capitalize list-style"
-      target="_blank"
-      href="{{ repo.html_url }}"
+  <div *ngIf="repoList.length">
+    <div
+      class="border border-white m-1 p-2 d-inline-flex rounded-end"
+      *ngFor="let repo of repoList"
     >
-      {{ repo.name }}
-    </a>
+      <a
+        class="text-capitalize list-style"
+        target="_blank"
+        href="{{ repo.html_url }}"
+      >
+        {{ repo.name }}
+      </a>
+    </div>
   </div>
+  <div class="loading" *ngIf="!repoList.length">Dealing with GitHub</div>
 </div>

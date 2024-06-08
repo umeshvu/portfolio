@@ -6,9 +6,23 @@ div.menu-list {
 .menu-list span {
   text-decoration: underline;
   text-wrap: nowrap;
+  cursor: pointer;
 }
 
 .main-heading {
   font-family: BillionDreams_PERSONAL;
   font-size: calc(4vw + 4vh + 2vmin);
+  animation: flicker 180s ease-in-out infinite alternate;
 }
+
+// @keyframes flicker {
+// 	0% {
+// 		text-shadow: 2px 2px 20px green;
+// 	}
+//   50% {
+// 		text-shadow: 2px 2px 20px blue;
+// 	}
+// 	100% {
+// 		text-shadow: 2px 2px 20px red;
+// 	}
+// }

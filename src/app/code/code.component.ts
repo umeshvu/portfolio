@@ -13,6 +13,7 @@ import { Component, OnInit } from '@angular/core';
 export class CodeComponent implements OnInit {
 
   repoList: any[] = [];
+  isGitRequestError = false;
 
   constructor(private http: HttpClient) {}
 
@@ -24,7 +25,7 @@ export class CodeComponent implements OnInit {
         }
       },
       (error) => {
-        console.log(error);
+        this.isGitRequestError = true;
       }
     );
   }

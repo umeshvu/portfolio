@@ -13,5 +13,5 @@
       </a>
     </div>
   </div>
-  <div class="loading" *ngIf="!repoList.length">Dealing with GitHub</div>
+  <div class="loading" *ngIf="!repoList.length">{{this.isGitRequestError ? 'Oops! GitHub is angry with me, later' : 'Dealing with GitHub'}}</div>
 </div>

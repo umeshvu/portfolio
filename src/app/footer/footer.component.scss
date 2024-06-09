@@ -2,3 +2,8 @@ span {
   font-size: 2.6vh;
   font-family: Computerfont;
 }
+@media only screen and (max-height: 500px) {
+  span{
+    font-size:5vh;
+  }
+}

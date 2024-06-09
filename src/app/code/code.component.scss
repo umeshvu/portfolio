@@ -37,3 +37,12 @@ a {
     width: 40px;
   }
 }
+
+@media only screen and (max-height: 500px) {
+  .list-style{
+    font-size: 6vh;
+  }
+  .loading{
+    font-size: 4vh;
+  }
+}

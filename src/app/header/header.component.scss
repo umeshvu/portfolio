@@ -21,3 +21,16 @@ div.menu-list {
 .main-heading:hover{
   color: coral;
 }
+
+@media only screen and (max-height: 500px) {
+  .main-heading{
+    font-size: 20vh;
+  }
+  div.menu-list {
+    font-size: 7vh;
+  }
+}
+
+
+
+
